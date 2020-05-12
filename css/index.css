@@ -1,3 +1,11 @@
+/* 
+    Creates a flex container 
+    Default is to center as a flex row but can be changed with arguments
+*/
+/*
+    Creates a top border around a container 
+    Default is top border, 2px, silver 
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -167,6 +175,23 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+#top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3%;
+}
+#top-header nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#top-header nav a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.5rem;
 }
 .footer {
   width: 100%;
