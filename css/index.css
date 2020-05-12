@@ -215,17 +215,11 @@ header #top-header {
 }
 header .bottom-header {
   border-top: 2px dashed silver;
-  text-align: right;
+  text-align: center;
 }
-header .bottom-header h2 {
+header .bottom-header .header-text {
+  margin: 0 6.5%;
   text-align: left;
-  margin-left: 13%;
-  margin-top: 2%;
-}
-header .bottom-header p {
-  margin: 1%;
-  margin-left: 12%;
-  text-align: -webkit-left;
   border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
