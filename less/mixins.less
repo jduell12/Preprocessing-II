@@ -12,8 +12,16 @@
 
 /*
     Creates a top border around a container 
-    Default is top border, 2px, silver 
+    Default is 2px, dashed silver 
 */
 .top-border(@size:2px, @style:dashed, @color:silver){
     border-top: @size @style @color;
+}
+
+/*
+    Creates a bottom border around a container 
+    Default is 2px, dashed and silver
+*/
+.bottom-border(@size:2px, @style:dashed, @color: @navigation-border){
+    border-bottom: @size @style @color;
 }

@@ -4,7 +4,11 @@
 */
 /*
     Creates a top border around a container 
-    Default is top border, 2px, silver 
+    Default is 2px, dashed silver 
+*/
+/*
+    Creates a bottom border around a container 
+    Default is 2px, dashed and silver
 */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -176,22 +180,17 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-#top-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 3%;
-}
-#top-header nav {
+nav {
   width: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#top-header nav a {
+nav a {
   text-decoration: none;
   color: #212529;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 .footer {
   width: 100%;
@@ -203,6 +202,31 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+header {
+  width: 100%;
+  text-align: -webkit-right;
+}
+header #top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3%;
+}
+header .bottom-header {
+  border-top: 2px dashed silver;
+  text-align: right;
+}
+header .bottom-header h2 {
+  text-align: left;
+  margin-left: 13%;
+  margin-top: 2%;
+}
+header .bottom-header p {
+  margin: 1%;
+  margin-left: 12%;
+  text-align: -webkit-left;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
   margin: 30px 0;

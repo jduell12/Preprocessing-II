@@ -1,3 +1,33 @@
+header{
+  width: 100%;
+  text-align: -webkit-right;
+  #top-header{
+    .flex(@justify:space-between);
+    margin: 3%;
+  }//closes top-header
+
+  .bottom-header{
+    .top-border();
+    text-align: right;
+
+    h2{
+      text-align: left;
+      margin-left: 13%;
+      margin-top: 2%;
+    }
+
+    p{
+      margin: 1%;
+      margin-left: 12%;
+      text-align: -webkit-left;
+      .bottom-border();
+    }//closes p
+    
+  }//closes bottom-header
+
+  
+}//closes header
+
 .home {
 
   .content-section {
@@ -25,7 +55,7 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    .bottom-border();
 
     .text-content {
       padding-left: 1%;
