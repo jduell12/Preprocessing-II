@@ -7,6 +7,7 @@ header{
 
     @media @mobile{
       flex-direction: column;
+      margin-bottom: 0.5%;
     }
   }//closes top-header
 
@@ -14,11 +15,28 @@ header{
     .top-border();
     text-align: center;
 
+    img{
+      @media @mobile{
+        width: 80%;
+      }
+    }
+
     .header-text{
       margin: 0 6.5%;
       text-align: left;
       .bottom-border();
+
+      @media @mobile{
+        margin: 5% 6.5%;
+      }
+
+      p{
+        @media @mobile{
+          margin-bottom: 3%;
+        }
+      }
     }
+    
     
   }//closes bottom-header
 
@@ -63,7 +81,6 @@ header{
 
   .inverse-content {
     padding-bottom: 30px;
-    .bottom-border();
 
     .text-content {
       padding-left: 1%;
@@ -79,8 +96,19 @@ header{
       padding-left: 0;
     }
 
+    .border{
+      width: 100%;
+      margin: 0 10%;
+      .bottom-border();
+
+      @media @mobile{
+        width: 80%;
+        margin: 5% 10% 0 10%;
+        padding: 0 10%;
+      }
+    }
     @media @mobile{
-      margin: 10%;
+      margin-bottom: 0;
     }
   } //close inverse-content
 
@@ -125,7 +153,7 @@ header{
     @media @mobile{
       flex-direction: column;
       align-items: center;
-      margin: 10%;
+      margin: 10% 10% 0 10%;
     }
   }//closes content-pick
 }// home

@@ -202,6 +202,13 @@ nav a {
   font-size: 1.5rem;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    justify-content: space-around;
+    margin: 2%;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -226,16 +233,32 @@ header #top-header {
 @media (max-width: 500px) {
   header #top-header {
     flex-direction: column;
+    margin-bottom: 0.5%;
   }
 }
 header .bottom-header {
   border-top: 2px dashed silver;
   text-align: center;
 }
+@media (max-width: 500px) {
+  header .bottom-header img {
+    width: 80%;
+  }
+}
 header .bottom-header .header-text {
   margin: 0 6.5%;
   text-align: left;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  header .bottom-header .header-text {
+    margin: 5% 6.5%;
+  }
+}
+@media (max-width: 500px) {
+  header .bottom-header .header-text p {
+    margin-bottom: 3%;
+  }
 }
 .home .content-section {
   margin: 30px 0;
@@ -272,7 +295,6 @@ header .bottom-header .header-text {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -287,9 +309,21 @@ header .bottom-header .header-text {
   padding-right: 1%;
   padding-left: 0;
 }
+.home .inverse-content .border {
+  width: 100%;
+  margin: 0 10%;
+  border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .border {
+    width: 80%;
+    margin: 5% 10% 0 10%;
+    padding: 0 10%;
+  }
+}
 @media (max-width: 500px) {
   .home .inverse-content {
-    margin: 10%;
+    margin-bottom: 0;
   }
 }
 .home .content-destination {
@@ -338,6 +372,6 @@ header .bottom-header .header-text {
   .home .content-pick {
     flex-direction: column;
     align-items: center;
-    margin: 10%;
+    margin: 10% 10% 0 10%;
   }
 }
