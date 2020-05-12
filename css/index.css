@@ -185,6 +185,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
+}
 nav {
   width: 30%;
   display: flex;
@@ -218,6 +223,11 @@ header #top-header {
   align-items: center;
   margin: 3%;
 }
+@media (max-width: 500px) {
+  header #top-header {
+    flex-direction: column;
+  }
+}
 header .bottom-header {
   border-top: 2px dashed silver;
   text-align: center;
@@ -233,9 +243,20 @@ header .bottom-header .header-text {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 80%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
@@ -243,6 +264,11 @@ header .bottom-header .header-text {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 80%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -252,9 +278,19 @@ header .bottom-header .header-text {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    order: -1;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    margin: 10%;
+  }
 }
 .home .content-destination {
   width: 75%;
@@ -262,6 +298,11 @@ header .bottom-header .header-text {
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 80%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -273,6 +314,11 @@ header .bottom-header .header-text {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
+}
 .home .content-pick .destination .btn button {
   display: block;
   width: 200px;
@@ -282,4 +328,16 @@ header .bottom-header .header-text {
   height: 45px;
   border-radius: 10px;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn button {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+  }
 }
