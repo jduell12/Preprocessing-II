@@ -25,3 +25,19 @@
 .bottom-border(@size:2px, @style:dashed, @color: @navigation-border){
     border-bottom: @size @style @color;
 }
+
+/*
+    Creates a button that can be changed
+    Default is 200px wide, color is eastern blue and text is white,
+    rounded borders and heigh is 200px
+*/
+.custom-btn(@width:200px, @bg-color:@eastern-blue, @txt-color:white){
+    display:block;
+    width: @width;
+    background-color: @bg-color;
+    margin: 0 10px 20px;
+    color: @txt-color;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 2rem;
+}

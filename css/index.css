@@ -10,6 +10,11 @@
     Creates a bottom border around a container 
     Default is 2px, dashed and silver
 */
+/*
+    Creates a button that can be changed
+    Default is 200px wide, color is eastern blue and text is white,
+    rounded borders and heigh is 200px
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -267,4 +272,14 @@ header .bottom-header .header-text {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn button {
+  display: block;
+  width: 200px;
+  background-color: #17A2B8;
+  margin: 0 10px 20px;
+  color: white;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 2rem;
 }
