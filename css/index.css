@@ -363,6 +363,10 @@ header .bottom-header .header-text {
   border-radius: 10px;
   font-size: 2rem;
 }
+.home .content-pick .destination .btn button:hover {
+  background-color: #212529;
+  color: #FFEBCD;
+}
 @media (max-width: 500px) {
   .home .content-pick .destination .btn button {
     width: 80%;
@@ -373,5 +377,55 @@ header .bottom-header .header-text {
     flex-direction: column;
     align-items: center;
     margin: 10% 10% 0 10%;
+  }
+}
+.home #contact {
+  text-align: center;
+  border-top: 2px dashed silver;
+}
+.home #contact h2 {
+  margin: 3%;
+}
+@media (max-width: 500px) {
+  .home #contact h2 {
+    margin: 8% 3% 5%;
+  }
+}
+.home #contact form {
+  font-size: 2rem;
+}
+.home #contact form input {
+  margin: 1%;
+}
+.home #contact textarea {
+  width: 100%;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  .home #contact textarea {
+    width: 80%;
+  }
+}
+.home #contact #submit {
+  display: block;
+  width: 200px;
+  background-color: #17A2B8;
+  margin: 0 10px 20px;
+  color: white;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 2rem;
+  display: inline;
+}
+.home #contact #submit:hover {
+  background-color: #212529;
+  color: #FFEBCD;
+}
+.home #contact h4 {
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .home #contact {
+    margin: 0 5% 0 5%;
   }
 }
